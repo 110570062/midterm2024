@@ -35,6 +35,10 @@
 
   gtag('config', 'G-6Y52M8TKWB');
 </script>
+<p class="s3">
+            輸入數字：<input type="text" id="t1" onchange="show()" class="s2">
+          </p>
+          <p id="t2" style="color: red;text-align: center;">生日快樂</p>
 </head>
 
 <body>
@@ -54,8 +58,12 @@
       <div id="header">  
         <h1>利佩嫦110570062<span></span></h1>	
 	    <h2>Company Slogan Goes Here</h2>
-      <input type="number" id="numberInput" placeholder="輸入數字">
-      <p id="greeting">生日快樂</p>
+<script>
+      function show()
+      {
+        document.getElementById('t2').style.fontSize = t1.value+'px';
+      }
+    </script>
   
       <script>
           const numberInput = document.getElementById('numberInput');
